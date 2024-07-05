@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      /* parent child relationship */
+      /* descendant selector (space) - direct child and indirect child */
+      /* div p {
+        color: red;
+      } */
+
+      /* child selector (>) - direct child */
+      /* div > p {
+        color: red;
+      } */
+
+      /* sibling relationship */
+      /* adjacent sibling selector (+) first sibling */
+
+      /* div + p {
+        color: red;
+      } */
+
+      /* general sibling selector (~) all siblings */
+
+      /* div ~ p {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>inside div - direct child</p>
+      <article>
+        <p>inside div - indirect child</p>
+      </article>
+      <p>inside div - direct child</p>
+    </div>
+    <p>outside div</p>
+    <section>
+      <div></div>
+      <p>inside div - first sibling</p>
+      <p>inside div - second sibling</p>
+    </section>
+    <p>outside div</p>
+  </body>
+</html>
