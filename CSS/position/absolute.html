@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent-box {
+        height: 254px;
+        width: 254px;
+        margin-block: 10px;
+        background-color: black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        /* transform: translate(-100px, -100px); */
+      }
+
+      .child-box {
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        position: absolute;
+        left: 0px;
+        /* margin-block: 10px;
+        top: 50%;
+        translate: -50% -50%; */
+        /* transform: translate(-100px, -100px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-box">
+      <div class="child-box"></div>
+    </div>
+  </body>
+</html>
