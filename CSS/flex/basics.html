@@ -6,20 +6,30 @@
     <title>Document</title>
     <style>
       .flex-container {
-        height: 600px;
+        /* min-height: calc(100vh - 16px); */
+        flex-wrap: wrap;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
+        margin-inline: auto;
+        /* justify-content: center; */
+        /* translate: 0% 50%; */
+        max-width: 1200px;
+        /* justify-content: center; */
+        /* align-items: stretch; */
         background-color: aqua;
         gap: 10px;
       }
       .flex-item {
-        /* height: 100px; */
-        width: 100px;
-        flex-basis: 100px;
+        height: 100px;
+        flex-grow: 1;
+        /* width: 100px; */
+        flex-basis: 200px;
         background-color: rosybrown;
         margin-inline: 10px;
+      }
+
+      .flex-item:nth-of-type(2) {
+        flex-grow: 2;
       }
 
       /* .flex-item:nth-of-type(1) {
