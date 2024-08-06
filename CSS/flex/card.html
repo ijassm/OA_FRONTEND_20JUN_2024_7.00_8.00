@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .flex-item {
+        max-width: 400px;
+        flex-basis: calc(100% / 4 - 20px);
+        border: 1px solid transparent;
+      }
+
+      /* .flex-item:nth-of-type(2) {
+        transform: skew(10deg);
+      } */
+
+      .flex-item:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.133);
+        border: 1px solid rgb(115, 255, 0);
+        /* rotate: 360deg; */
+        /* transform: skew(10deg); */
+        transition: all 0.5s;
+      }
+
+      .max-wrapper {
+        width: 95%;
+        max-width: 1400px;
+        margin-inline: auto;
+      }
+
+      .content1 {
+        padding: 10px;
+      }
+
+      .content2 {
+        display: flex;
+        align-items: center;
+      }
+
+      .content2 .avatar {
+        max-width: 100px;
+      }
+
+      @media (max-width: 1250px) {
+        .flex-item {
+          flex-basis: calc(100% / 2 - 20px);
+          /* background-color: aqua; */
+        }
+      }
+
+      @media (max-width: 750px) {
+        .flex-item {
+          flex-basis: 100%;
+          /* background-color: aqua; */
+        }
+
+        .flex-item:nth-of-type(1) {
+          order: 2;
+        }
+        .flex-item:nth-of-type(2) {
+          order: 4;
+        }
+        .flex-item:nth-of-type(3) {
+          order: 1;
+        }
+        .flex-item:nth-of-type(4) {
+          order: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="max-wrapper">
+      <h1>Blog</h1>
+      <main class="flex-container">
+        <section class="flex-item">
+          <img
+            src="https://cdn.create.vista.com/api/media/small/157116016/stock-photo-design-of-workplace-in-home-office-with-modern-equipment-and-objects"
+            alt="Technology"
+            width="100%"
+          />
+          <article class="content1">
+            <div>Technology 1</div>
+            <h2>What's New in 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              voluptatem voluptate, recusandae vel consequatur molestias
+              numquam.
+            </p>
+          </article>
+          <article class="content2">
+            <img
+              class="avatar"
+              src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png"
+              alt="avatar"
+              width="100%"
+            />
+            <div>
+              <p>Jane Doe</p>
+              <p>2h ago</p>
+            </div>
+          </article>
+        </section>
+        <section class="flex-item">
+          <img
+            src="https://cdn.create.vista.com/api/media/small/157116016/stock-photo-design-of-workplace-in-home-office-with-modern-equipment-and-objects"
+            alt="Technology"
+            width="100%"
+          />
+          <article class="content1">
+            <div>Technology 2</div>
+            <h2>What's New in 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              voluptatem voluptate, recusandae vel consequatur molestias
+              numquam.
+            </p>
+          </article>
+          <article class="content2">
+            <img
+              class="avatar"
+              src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png"
+              alt="avatar"
+              width="100%"
+            />
+            <div>
+              <p>Jane Doe</p>
+              <p>2h ago</p>
+            </div>
+          </article>
+        </section>
+        <section class="flex-item">
+          <img
+            src="https://cdn.create.vista.com/api/media/small/157116016/stock-photo-design-of-workplace-in-home-office-with-modern-equipment-and-objects"
+            alt="Technology"
+            width="100%"
+          />
+          <article class="content1">
+            <div>Technology 3</div>
+            <h2>What's New in 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              voluptatem voluptate, recusandae vel consequatur molestias
+              numquam.
+            </p>
+          </article>
+          <article class="content2">
+            <img
+              class="avatar"
+              src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png"
+              alt="avatar"
+              width="100%"
+            />
+            <div>
+              <p>Jane Doe</p>
+              <p>2h ago</p>
+            </div>
+          </article>
+        </section>
+        <section class="flex-item">
+          <img
+            src="https://cdn.create.vista.com/api/media/small/157116016/stock-photo-design-of-workplace-in-home-office-with-modern-equipment-and-objects"
+            alt="Technology"
+            width="100%"
+          />
+          <article class="content1">
+            <div>Technology 4</div>
+            <h2>What's New in 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              voluptatem voluptate, recusandae vel consequatur molestias
+              numquam.
+            </p>
+          </article>
+          <article class="content2">
+            <img
+              class="avatar"
+              src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png"
+              alt="avatar"
+              width="100%"
+            />
+            <div>
+              <p>Jane Doe</p>
+              <p>2h ago</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
