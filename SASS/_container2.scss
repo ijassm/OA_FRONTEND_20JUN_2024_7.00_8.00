@@ -1,0 +1,13 @@
+.container2 {
+  .box1 {
+    @include box(200px, 200px, $primary);
+    @extend .center;
+    .box2 {
+      @include box(100px, 100px, $secondary);
+      @extend .center;
+      .box3 {
+        @include box(50px, 50px, grey);
+      }
+    }
+  }
+}

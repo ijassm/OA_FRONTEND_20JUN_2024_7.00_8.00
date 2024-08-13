@@ -1,0 +1,74 @@
+.center, body, .container4 .box1 .box2, .container4 .box1, .container1 .box1 .box2, .container1 .box1, .container2 .box1 .box2, .container2 .box1, .container3 .box1 .box2, .container3 .box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3 .box1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.container3 .box1 .box2 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50, 49, 49);
+}
+.container3 .box1 .box2 .box3 {
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+}
+
+.container2 .box1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.container2 .box1 .box2 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50, 49, 49);
+}
+.container2 .box1 .box2 .box3 {
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+}
+
+.container1 .box1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.container1 .box1 .box2 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50, 49, 49);
+}
+.container1 .box1 .box2 .box3 {
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+}
+
+.container4 .box1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.container4 .box1 .box2 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50, 49, 49);
+}
+.container4 .box1 .box2 .box3 {
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+}
+
+body {
+  flex-direction: column;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */

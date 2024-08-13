@@ -1,0 +1,13 @@
+@import "./variable";
+@import "./classes";
+@import "./mixins";
+@import "./container1";
+@import "./container2";
+@import "./container3";
+@import "./container4";
+
+body {
+  @extend .center;
+  flex-direction: column;
+  gap: 10px;
+}
