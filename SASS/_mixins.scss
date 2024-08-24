@@ -1,4 +1,4 @@
-@mixin box($h, $w, $bg) {
+@mixin box($h, $w, $bg: rgb(0, 64, 255)) {
   height: $h;
   width: $w;
   background-color: $bg;

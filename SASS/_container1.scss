@@ -1,3 +1,6 @@
+@import "./variable";
+@import "./classes";
+@import "./mixins";
 .container3 {
   .box1 {
     @include box(200px, 200px, $primary);
@@ -6,7 +9,7 @@
       @include box(100px, 100px, $secondary);
       @extend .center;
       .box3 {
-        @include box(50px, 50px, grey);
+        @include box(50px, 50px);
       }
     }
   }
