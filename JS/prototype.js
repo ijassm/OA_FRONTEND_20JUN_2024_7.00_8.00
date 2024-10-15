@@ -1,0 +1,12 @@
+// console.log(students.push);
+// console.log(new Array());
+// console.log(Array.prototype);
+// console.log(new String("Hello").at(0));
+// // console.log(typeof "Hello"["at"]());
+// console.log(new Boolean(true));
+// console.log("Hello".at());
+// console.log(typeof true);
+// console.log(String.prototype);
+// console.log(Number.prototype);
+// console.log(Object.prototype);
+// console.log(Boolean.prototype.constructor(true));
