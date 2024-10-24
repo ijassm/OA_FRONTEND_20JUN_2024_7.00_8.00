@@ -53,14 +53,14 @@
 //   console.log("Hello", name);
 // })("xyz");
 
-function sum(...rest) {
-  let sum = 0;
-  for (const i of rest) {
-    sum += i;
-  }
-  return sum;
-}
+// function sum(...rest) {
+//   let sum = 0;
+//   for (const i of rest) {
+//     sum += i;
+//   }
+//   return sum;
+// }
 
-console.log(sum(5, 6));
-console.log(sum(5, 6, 6));
-console.log(sum(5, 6, 6, 8));
+// console.log(sum(5, 6));
+// console.log(sum(5, 6, 6));
+// console.log(sum(5, 6, 6, 8));
