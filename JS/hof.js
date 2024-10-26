@@ -37,7 +37,7 @@ function Quadruple(arr) {
 //   })
 // );
 
-// console.log(array1.map((element) => element * 2));
+console.log(array1.map((element) => element * 2));
 // console.log(array1.map((element) => element * 3));
 // console.log(array1.map((element) => element * 4));
 
@@ -60,14 +60,36 @@ function map(logicFunc, array) {
 //   }, array1)
 // );
 
-console.log(map((element) => element * 2, array1));
-console.log(map((element) => element * 2, array1));
-console.log(map((element) => element * 3, array1));
-console.log(map((element) => element * 4, array1));
-console.log(map((element) => element * 5, array1));
-console.log(array1.map((element) => element * 6));
+// console.log(map((element) => element * 2, array1));
+// console.log(map((element) => element * 2, array1));
+// console.log(map((element) => element * 3, array1));
+// console.log(map((element) => element * 4, array1));
+// console.log(map((element) => element * 5, array1));
+// console.log(array1.map((element) => element * 6));
 
 // console.log(triple(array1));
 // console.log(triple(array2));
 // console.log(Quadruple(array1));
 // console.log(Quadruple(array2));
+
+// console.log(array1.__proto__);
+// console.log(Array.prototype);
+
+// console.log(Array.prototype === array1.__proto__);
+// console.log(Array.prototype === array2.__proto__);
+
+// console.log(array1.__proto__.__proto__);
+// console.log(Object.prototype);
+// console.log(Object.prototype === array1.__proto__.__proto__);
+
+// console.log(array1.__proto__.__proto__.__proto__);
+// console.log(Object.prototype);
+// console.log(Object.prototype === array1.__proto__.__proto__);
+
+// Array.prototype.myMap = function (logicFunc) {
+//   const output = [];
+//   for (let i = 0; i < this.length; i++) {
+//     output.push(logicFunc(this[i], i, this));
+//   }
+//   return output;
+// };
