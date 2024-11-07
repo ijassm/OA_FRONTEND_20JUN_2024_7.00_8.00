@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      span {
-        display: inline-block;
-        border: 2px solid black;
-        padding: 5px;
-        margin: 5px;
-        transition: all 0.5s;
+      /* .height {
+        min-height: 100vh;
       }
 
-      span:hover {
-        rotate: 360deg;
-        scale: 2;
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      } */
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <h1 class="title">Document</h1>
-    <h1 id="unique">1Document</h1>
-    <input type="text" />
-    <input type="password" />
-    <script src="document.js"></script>
+    <h1>Counter App</h1>
+    <h3 class="value">0</h3>
+    <div>
+      <button class="increment">Increment</button>
+      <button class="decrement">Decrement</button>
+      <button class="reset">Reset</button>
+      <!-- <button class="toggle" onclick="trigger()">Toggle</button> -->
+    </div>
+    <script src="dom1.js"></script>
   </body>
 </html>
