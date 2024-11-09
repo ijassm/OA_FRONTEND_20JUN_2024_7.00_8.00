@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="blub" />
+    <section style="margin-block: 50px">
+      <button class="on" onclick="switchOn()">Switch On</button>
+      <button class="off" onclick="switchOff()">Switch OFF</button>
+    </section>
+
+    <!-- <button onclick="(() => console.log('hdfsg'))()">Print this page</button> -->
+    <button onclick="printScreen()">Print this page</button>
+    <button onclick="clearTime()">clear</button>
+    <script src="dom2.js"></script>
+  </body>
+</html>
