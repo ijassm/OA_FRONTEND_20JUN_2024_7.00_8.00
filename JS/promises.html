@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const promise = new Promise((resolve, reject) => {
+        let isBool = true;
+        setTimeout(() => {
+          isBool = true;
+          if (isBool) {
+            resolve("Aravind resolved first promise successfully");
+          } else {
+            reject("Aravind rejected first promise failed");
+          }
+        }, 2000);
+      });
+
+      promise
+        .then(
+          () => {
+            console.log("Merwin must buy a chocolate for aravind✌");
+            return new Promise((resolve, reject) => {
+              let isBool = false;
+              setTimeout(() => {
+                isBool = false;
+                if (isBool) {
+                  resolve("Aravind resolved second promise successfully");
+                } else {
+                  reject("Aravind rejected second promise failed");
+                }
+              }, 2000);
+            });
+          },
+          () => {
+            console.log("You must buy chocolate for merwin");
+          }
+        )
+        .then(
+          () => {
+            console.log("Merwin must buy a biriyani for aravind✌");
+          },
+          () => {
+            console.log("You must buy biriyani for merwin");
+          }
+        );
+    </script>
+  </body>
+</html>
