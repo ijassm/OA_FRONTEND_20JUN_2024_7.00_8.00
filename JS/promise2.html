@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <script>
+      //   const rayzorPay = function (successCb, errorCb) {
+      //     successCb();
+      //   };
+
+      //   console.log(rayzorPay(function () {}));
+
+      for (let i = 0; i < 100; i++) {
+        // setTimeout(() => {
+        console.log(i);
+        // }, 2000);
+      }
+
+      const promise = new Promise((resolve, reject) => {
+        const payment = false;
+        if (payment) {
+          setTimeout(() => {
+            resolve("Payment successful");
+          }, 1000);
+        } else {
+          setTimeout(() => {
+            reject("Payment failed");
+          }, 1000);
+        }
+      });
+
+      promise
+        .then(
+          (data) => {
+            console.log(data);
+          } //successCb
+        )
+        .catch(
+          (data) => {
+            console.log(data);
+          } //failureCb
+        );
+    </script>
+  </body>
+</html>
