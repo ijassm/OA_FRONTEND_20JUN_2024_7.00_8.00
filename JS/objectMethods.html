@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // call bind appy
+
+      // const person = {
+      //   name: "Merwin",
+      //   age: 5,
+      //   greet() {
+      //     return `Hello, my name is ${this.name}`;
+      //   },
+      // };
+
+      const persons = [
+        {
+          name: "Merwin",
+          age: 5,
+        },
+        {
+          name: "Fouziya",
+          age: 3,
+        },
+        {
+          name: "Yuvasri",
+          age: 4,
+        },
+        {
+          name: "Devesh",
+          age: 6,
+        },
+        {
+          name: "Aravind",
+          age: 7,
+        },
+      ];
+
+      function greet(location) {
+        // console.log(this);
+        return `Hello, my name is ${this.name} and i live in ${location}`;
+      }
+
+      greet();
+      // call example
+      // console.log(greet.call(persons[0], "pondy"));
+      // console.log(greet.call(persons[1], "tindivanam"));
+      // console.log(greet.call(persons[2], "london"));
+      // console.log(greet.call(persons[3], "south korea"));
+      // console.log(greet.call(persons[4], "thailand"));
+
+      // apply example
+      // console.log(greet.apply(persons[0], ["pondy"]));
+      // console.log(greet.apply(persons[1], ["tindivanam"]));
+      // console.log(greet.apply(persons[2], ["london"]));
+      // console.log(greet.apply(persons[3], ["south korea"]));
+      // console.log(greet.apply(persons[4], ["thailand"]));
+
+      // bind example
+      const greetMerwin = greet.bind(persons[0], "pondy");
+      const greetFouziya = greet.bind(persons[1], "tindivanam");
+      const greetYuvasri = greet.bind(persons[2], "london");
+      const greetDevesh = greet.bind(persons[3], "south korea");
+      const greetAravind = greet.bind(persons[4], "thailand");
+
+      console.log(greetMerwin());
+      console.log(greetFouziya());
+      console.log(greetYuvasri());
+      console.log(greetDevesh());
+      console.log(greetAravind());
+
+      // console.log(person.greet());
+    </script>
+  </body>
+</html>
